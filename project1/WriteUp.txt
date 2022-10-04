@@ -1,0 +1,17 @@
+Project 1 - CSCI 5611
+
+Author - Levi Cavagnetto
+
+EXTERNAL LIBRARIES:
+No external libraries were used to make this project. Most of the project source code was modified from the in-class activities.
+
+DIFFICULTIES:
+1. Organizing the source code. - I modified the code that we used for the in-class activities. The code given was good for small examples
+but combining them together quickly became hard to manage. I spent most of my time trying to figure out part 1 of the project and thus fell
+behind for part 2 and 3. 
+
+2. Tuning and fixing odd bugs. - I think most of my project was close to acheiving the problems I set out to solve. One particular bug that I
+could not solve was how the path worked fine with one agent, but adding mutiple agents caused their paths to collide with obstacles.
+
+Even tough my project 1 only solves some of each problem, I feel that I am more prepared for the next project. I have a better idea of how to
+modularize the activities that we solve. I also have a better understanding of how the functions can work together to make many different actions happen at once.
