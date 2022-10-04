@@ -15,32 +15,68 @@
 </div>
   
 <div class="container">
-    <div class="row">
-        <h3 class="col-12">One agent navigating the obstacles</h3>
-        <img class="col-5 ml-3" src="Nav_Sim_1.gif" alt="">
-        <p class="col-12 ml-3 mt-3">The agent somewhat correctly navigates the environment. There are no collisions along the path but the obstacle avoidance is buggy. The animation runs mostly smooth.</p>
-        <div class="col-12"></div>
-        <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project1/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
-    </div>
-    <hr class="hr" />
 
-    <div class="row">
-        <h3 class="col-12">Mutiple agents navigating the obstacles</h3>
-        <img class="col-5 ml-3" src="Nav_Sim_2.gif" alt="">
-        <p class="col-12 ml-3 mt-3">When adding mutiple agents, the path planning broke and I was unable to find the bug that caused this. The agents head towards their goals. It is not shown very well in this clip, but there is agent avoidance happening. Agents were also pulled towards one another, this caused issues but I was not able to figure out how to take that attraction part out of the code.</p>
-        <div class="col-12"></div>
-        <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project1/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
-    </div>
-    <hr class="hr" />
+  <div class="row">
+      <h3 class="col-12">Write Up:</h3>
+      <p class="col-12">Author - Levi Cavagnetto</p>
+      <p class="col-12">EXTERNAL LIBRARIES:</p>
+      <p class="col-12">No external libraries were used to make this project. Most of the project source code was modified from the in-class activities.</p>
+      <br>
+      <p class="col-12">DIFFICULTIES:</p>
+      <p class="col-12">1. Organizing the source code. - I modified the code that we used for the in-class activities. The code given was good for small examples
+        but combining them together quickly became hard to manage. I spent most of my time trying to figure out part 1 of the project and thus fell
+        behind for part 2 and 3. </p>
+      <p class="col-12">2. Tuning and fixing odd bugs. - I think most of my project was close to achieving the problems I set out to solve. One particular bug that I
+        could not solve was how the path worked fine with one agent, but adding multiple agents caused their paths to collide with obstacles.</p>
+      <p class="col-12">Even though my project 1 only solves some of each problem, I feel that I am more prepared for the next project. I have a better idea of how to
+        modularize the activities that we solve. I also have a better understanding of how the functions can work together to make many different actions happen at once.</p>
+      
+      <br>
+      <p class="col-12">FEATURES:</p>
+      <p class="col-12">Part 1:<br>
+        - Added code that ensures that the start node and the end node connections do not collide with obstacles.
+        - I also attempted writing a UCS algorithm. The code that I submitted successfully finds a path, but it is worse than the BFS
+        algorithm that was provided.<br>
+        <br>Part 2:<br>
+        - An agent is capable of moving through an environment with obstacles to reach its goal position. The path does not collide with
+        obstacles. The ball sometimes collides with obstacles.<br>
+        
+        Extra parts attempted:<br>
+        -3D Rendering & Camera - I added a 3D view to the program.<br>
+        -Improved Agent & Scene Rendering - Added a ball png file in place of the circle rendered by processing<br>
+        -Multiple Agents Planning+ - I added multiple agents to the scene.<br>
+        <br>Part 3:<br>
+        -The agents somewhat all move towards their goals. The paths are not correct when using multiple agents. The agents also avoid each
+        other. I used the code from the TCC forces exercise.
+    </p>
 
-    <div class="row">
-        <h3 class="col-12">One agent navigating different obstacles</h3>
-        <img class="col-5 ml-3" src="Nav_Sim_3.gif" alt="">
-        <p class="col-12 ml-3 mt-3">The agent completely lost smoothness when adding 3D obstacles to the scene. I was unable to figure out why. This is why I included the videos without the 3D obstacles.</p>
-        <div class="col-12"></div>
-        <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project1/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
-    </div>
-    
+  </div>
+  <hr class="hr" />
+
+  <div class="row">
+      <h3 class="col-12">One agent navigating the obstacles</h3>
+      <img class="col-5 ml-3" src="Nav_Sim_1.gif" alt="">
+      <p class="col-12 ml-3 mt-3">The agent somewhat correctly navigates the environment. There are no collisions along the path but the obstacle avoidance is buggy. The animation runs mostly smooth.</p>
+      <div class="col-12"></div>
+      <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project1/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
+  </div>
+  <hr class="hr" />
+
+  <div class="row">
+      <h3 class="col-12">Mutiple agents navigating the obstacles</h3>
+      <img class="col-5 ml-3" src="Nav_Sim_2.gif" alt="">
+      <p class="col-12 ml-3 mt-3">When adding mutiple agents, the path planning broke and I was unable to find the bug that caused this. The agents head towards their goals. It is not shown very well in this clip, but there is agent avoidance happening. Agents were also pulled towards one another, this caused issues but I was not able to figure out how to take that attraction part out of the code.</p>
+      <div class="col-12"></div>
+      <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project1/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
+  </div>
+  <hr class="hr" />
+
+  <div class="row">
+      <h3 class="col-12">One agent navigating different obstacles</h3>
+      <img class="col-5 ml-3" src="Nav_Sim_3.gif" alt="">
+      <p class="col-12 ml-3 mt-3">The agent completely lost smoothness when adding 3D obstacles to the scene. I was unable to figure out why. This is why I included the videos without the 3D obstacles.</p>
+      <div class="col-12"></div>
+      <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project1/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
   </div>
 
   <div class="m-5">
