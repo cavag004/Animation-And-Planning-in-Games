@@ -10,8 +10,25 @@ DIFFICULTIES:
 but combining them together quickly became hard to manage. I spent most of my time trying to figure out part 1 of the project and thus fell
 behind for part 2 and 3. 
 
-2. Tuning and fixing odd bugs. - I think most of my project was close to acheiving the problems I set out to solve. One particular bug that I
-could not solve was how the path worked fine with one agent, but adding mutiple agents caused their paths to collide with obstacles.
+2. Tuning and fixing odd bugs. - I think most of my project was close to achieving the problems I set out to solve. One particular bug that I
+could not solve was how the path worked fine with one agent, but adding multiple agents caused their paths to collide with obstacles.
 
-Even tough my project 1 only solves some of each problem, I feel that I am more prepared for the next project. I have a better idea of how to
+Even though my project 1 only solves some of each problem, I feel that I am more prepared for the next project. I have a better idea of how to
 modularize the activities that we solve. I also have a better understanding of how the functions can work together to make many different actions happen at once.
+
+CHALLENGES THAT I ATTEMPTED:
+	Part 1:
+		- Added code that ensures that the start node and the end node connections do not collide with obstacles.
+		- I also attempted writing a UCS algorithm. The code that I submitted successfully finds a path, but it is worse than the BFS
+		algorithm that was provided.
+	Part 2:
+		- An agent is capable of moving through an environment with obstacles to reach its goal position. The path does not collide with
+		obstacles. The ball sometimes collides with obstacles.
+		
+		Extra parts attempted:
+		-3D Rendering & Camera - I added a 3D view to the program.
+		-Improved Agent & Scene Rendering - Added a ball png file in place of the circle rendered by processing
+		-Multiple Agents Planning+ - I added multiple agents to the scene.
+	Part 3:
+		-The agents somewhat all move towards their goals. The paths are not correct when using multiple agents. The agents also avoid each
+		other. I used the code from the TCC forces exercise.
