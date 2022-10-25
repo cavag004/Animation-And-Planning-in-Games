@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center rounded-bottom">
+  <h1 class="font-weight-bold">Project 2 - Physically-Based Animation with PDEs</h1>
+</div>
+  
+<div class="container">
+
+  <div class="row">
+      <h3 class="col-12">Write Up:</h3>
+      <p class="col-12">Author - Levi Cavagnetto</p>
+      <p class="col-12">EXTERNAL LIBRARIES:</p>
+      <p class="col-12">No external libraries were used to make this project. Most of the project source code was modified from the in-class activities.</p>
+      <br>
+      <p class="col-12">DIFFICULTIES:</p>
+      <p class="col-12">1. Wind was difficult to get working for Part 1. Everything else went fairly smooth.</p>
+      
+      <br>
+      <p class="col-12">FEATURES:</p>
+      <p class="col-12">Part 1:<br>
+        - Multiple Ropes (2D). I was able to add multiple ropes into my simulation.<br>
+        - Cloth Simulation. I was able to connect the ropes horizontally.<br>
+        - High-quality Rendering. I added a controllable camera and colored the cloth.<br>
+        - Air Drag for Cloth. I was able to add drag to the cloth simulation.<br>
+        - User Interaction. The user can control the obstacle and move it through the cloth to tear it.<br>
+        - Ripping/Tearing. The user can tear the cloth with the obstacle or by clicking different spots on the cloth to delete nodes.<br>
+        <br>Part 2:<br>
+        - For Part 2, I implemented the Shallow Water equation. See the demonstration below.<br>
+        - ART SUBMITION: I would like to submit Part 2 for the art contest.
+    </p>
+
+  </div>
+  <hr class="hr" />
+
+  <div class="row">
+      <h3 class="col-12">Cloth simulation with user interaction and tearing</h3>
+      <img class="col-5 ml-3" src="ClothSim/Rope_1.gif" alt="">
+      <p class="col-12 ml-3 mt-3">The ball can be controlled by the user and can tear through the obstacle if moving fast enough.</p>
+      <div class="col-12"></div>
+      <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project2/ClothSim/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
+  </div>
+  <hr class="hr" />
+
+  <div class="row">
+      <h3 class="col-12">Cloth - ball interaction and drag demonstration</h3>
+      <img class="col-5 ml-3" src="ClothSim/Rope_2.gif" alt="">
+      <p class="col-12 ml-3 mt-3">The cloth collides with the ball and also has a damping force that acts as drag</p>
+      <div class="col-12"></div>
+      <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project2/ClothSim/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
+  </div>
+  <hr class="hr" />
+
+  <div class="row">
+      <h3 class="col-12">User click to tear demonstration</h3>
+      <img class="col-5 ml-3" src="ClothSim/Rope_3.gif" alt="">
+      <p class="col-12 ml-3 mt-3">The user can click near nodes on the cloth to delete the node. Simulates user tearing. (The user interaction is slightly broken, you must click a bit above where you want to click)</p>
+      <div class="col-12"></div>
+      <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project2/ClothSim/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
+  </div>
+  <hr class="hr" />
+
+  <div class="row">
+    <h3 class="col-12">Controllable camera demonstration</h3>
+    <img class="col-5 ml-3" src="ClothSim/Rope_4.gif" alt="">
+    <p class="col-12 ml-3 mt-3">The user can control the camera to get different views of the simulation.</p>
+    <div class="col-12"></div>
+    <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project2/ClothSim/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
+  </div>
+  <hr class="hr" />
+
+  <div class="row">
+    <h3 class="col-12">Part 2 - Shallow Water Simulation</h3>
+    <img class="col-5 ml-3" src="SWE/SWE.gif" alt="">
+    <p class="col-12 ml-3 mt-3">Implemented the shallow water equation as shown from class.</p>
+    <div class="col-12"></div>
+    <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project2/SWE/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
+  </div>
+
+  <div class="m-5">
+    
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
