@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center rounded-bottom">
+  <h1 class="font-weight-bold">Project 3 - Optimization-Based Animation</h1>
+</div>
+  
+<div class="container">
+
+  <div class="row">
+      <h3 class="col-12">Write Up:</h3>
+      <p class="col-12">Author - Levi Cavagnetto</p>
+      <p class="col-12">EXTERNAL LIBRARIES:</p>
+      <p class="col-12">No external libraries were used to make this project. Most of the project source code was modified from the in-class activities.</p>
+      <br>
+      <p class="col-12">DIFFICULTIES:</p>
+      <p class="col-12">1. Obstacles were very difficult to implement with my implementation of the IK. I only had control over the joints through the endpoint, and could not find a way to change their position.</p>
+      
+      <br>
+      <p class="col-12">FEATURES:</p>
+      <p class="col-12">Part 1:<br>
+        - Multi-arm IK (2D). I was able to create a multi-arm IK.<br>
+        - Joint limits. I added joint limits to my IK skeleton.<br>
+        - Obstacles. Obstacles were difficult to figure out, but the end effector of the IK cannot go through the floor.<br>
+        - User Interaction. The user can control both arms using left and right click respectively. And 'a' and 'd' move the root of the IK left and right.<br>
+        - Moving IK. The user can move the root of the IK to the left and right using 'a' and 'd'.<br>
+        - 3D rendering. The IK is not simulated in a 3D environment but the IK is rendered in 3D.<br>
+        <br>Part 2:<br>
+        - For Part 2, I implemented the FABRIK solver. See the demonstration below.<br>
+    </p>
+
+  </div>
+  <hr class="hr" />
+
+  <div class="row">
+      <h3 class="col-12">Multi-arm IK (2D)</h3>
+      <img class="col-5 ml-3" src="IK_Project/Multi-arm-IK.gif" alt="">
+      <p class="col-12 ml-3 mt-3">This demonstrates the use of two arms connected to the same root. The user can pick up and move a ball around.</p>
+      <div class="col-12"></div>
+      <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project2/ClothSim/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
+  </div>
+  <hr class="hr" />
+
+  <div class="row">
+      <h3 class="col-12">Joint limits</h3>
+      <img class="col-5 ml-3" src="IK_Project/Joint-limits.gif" alt="">
+      <p class="col-12 ml-3 mt-3">This demonstrates that the IK has joint limits.</p>
+      <div class="col-12"></div>
+      <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project2/ClothSim/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
+  </div>
+  <hr class="hr" />
+
+  <div class="row">
+      <h3 class="col-12">Obstacles</h3>
+      <img class="col-5 ml-3" src="IK_Project/Obstacles.gif" alt="">
+      <p class="col-12 ml-3 mt-3">Obstacles were difficult to figure out, but the end effector of the IK cannot go through the floor.</p>
+      <div class="col-12"></div>
+      <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project2/ClothSim/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
+  </div>
+  <hr class="hr" />
+
+  <div class="row">
+    <h3 class="col-12">Moving IK</h3>
+    <img class="col-5 ml-3" src="IK_Project/User-interaction-moving-ik.gif" alt="">
+    <p class="col-12 ml-3 mt-3">The user can move the root of the IK skeleton.</p>
+    <div class="col-12"></div>
+    <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project2/ClothSim/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
+  </div>
+  <hr class="hr" />
+
+  <div class="row">
+    <h3 class="col-12">Part 2 - Alternative IK Solver</h3>
+    <img class="col-5 ml-3" src="FABRIK/fabrik.gif" alt="">
+    <p class="col-12 ml-3 mt-3">I implemented the FABRIK solver. Here is the demonstration of the FABRIK solver aiming for my mouse.</p>
+    <div class="col-12"></div>
+    <a href="https://github.com/cavag004/Animation-And-Planning-in-Games/blob/main/project2/SWE/" class="col-2 ml-3 mt-3 btn btn-primary">Source Code</a>
+  </div>
+
+  <div class="m-5">
+    
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
